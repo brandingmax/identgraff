@@ -37,14 +37,14 @@ const cards = [
 
 export default function FeaturesSection() {
   return (
-    <Container maxWidth="lg" sx={{ pb: 6 }}>
+    <Container maxWidth="lg" sx={{ pb: 6, px: 4 }}>
       <Typography variant="h4" component="h2" fontWeight="medium" gutterBottom align="center" sx={{ mb: 4 }}>
         Por que escolher a Identgraff?
       </Typography>
 
-      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
         {cards.map((card, index) => (
-          <Grid size={4}>
+          <Grid size={{ xs: 4, sm: 12, md: 4 }}>
             <Card
               sx={{
                 height: "100%",

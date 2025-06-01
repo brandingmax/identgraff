@@ -42,10 +42,10 @@ export default function Header() {
         container
         spacing={2}
         alignItems="center"
-        justifyContent="center"
+        justifyContent="center" columns={{ xs: 4, sm: 8, md: 12 }}
         sx={{ maxWidth: 1160, mx: "auto" }}
       >
-        <Grid size={7}>
+        <Grid size={{ xs: 7, sm: 12, md: 7 }}>
           <Typography variant="h3" component="h1" gutterBottom fontWeight="bold">
             A Impressão começa aqui!
           </Typography>

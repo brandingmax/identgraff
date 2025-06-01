@@ -26,15 +26,15 @@ const steps = [
 
 const ComoFunciona = () => {
   return (
-    <Box pb={7} id="como-funciona">
+    <Box pb={7} px={2} id="como-funciona">
       <Container maxWidth="lg">
         <Typography variant="h4" component="h2" gutterBottom fontWeight="bold" align="center">
           Como funciona?
         </Typography>
 
-          <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+          <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
           {steps.map((step, index) => (
-            <Grid size={3}>
+            <Grid size={{ xs: 4, sm: 12, md: 6 }}>
               <Card variant="outlined" sx={{ height: '100%', borderRadius: 3 }}>
                 <CardContent>
                   <Typography variant="h6" gutterBottom fontWeight="medium">

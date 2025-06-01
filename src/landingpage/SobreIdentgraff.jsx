@@ -6,13 +6,13 @@ export default function SobreIdentgraff() {
     <Box
       component="section"
       sx={{
-        px: 4,
+        px: 2,
         py: 2,
       }}
     >
     <Container maxWidth="lg">
-      <Grid container spacing={2} alignItems="center">
-        <Grid size={5}>
+      <Grid container spacing={2} alignItems="center" columns={{ xs: 4, sm: 8, md: 12 }}>
+        <Grid size={{ xs: 5, sm: 12, md: 6 }}>
           <Box
             component="img"
             src="/img/identgraff-hero4.png" // Substitua pelo caminho correto da imagem
@@ -26,7 +26,7 @@ export default function SobreIdentgraff() {
           />
         </Grid>
 
-        <Grid size={7}>
+        <Grid size={{ xs: 7, sm: 12, md: 6 }}>
           <Typography variant="h4" component="h2" gutterBottom fontWeight="bold">
             Uma plataforma feita para você crescer
           </Typography>

@@ -62,7 +62,7 @@ const closingText =
   "A Identgraff nasceu para apoiar gráficas e papelarias que desejam crescer, profissionalizar sua presença digital e atender seus clientes com excelência, tudo isso com uma plataforma prática, acessível e eficiente.";
 
   return (
-    <Box py={5} id="about">
+    <Box py={5} px={2} id="about">
       <Container maxWidth="lg">
         <Typography variant="h4" component="h2" gutterBottom fontWeight="bold" align="center">
           {title}
@@ -76,9 +76,9 @@ const closingText =
           {intro3}
         </Typography>
 
-        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
           {cards.map(({ icon, title, description }, index) => (
-            <Grid size={4} key={index}>
+            <Grid size={{ xs: 4, sm: 12, md: 4 }} key={index}>
               <Card variant="outlined" sx={{ height: "100%", borderRadius: 3 }}>
                 <CardContent>
                   {icon}
@@ -98,9 +98,9 @@ const closingText =
           <Typography variant="h6" gutterBottom fontWeight="medium" align="center">
             {benefitsTitle}
           </Typography>
-<Grid container spacing={2}>
+<Grid container spacing={2} columns={{ xs: 4, sm: 8, md: 12 }}>
   {benefitsList.map((item, index) => (
-    <Grid size={6}>
+    <Grid size={{ xs: 4, sm: 12, md: 6 }}>
       <Card variant="outlined" sx={{ display: 'flex', alignItems: 'center', borderRadius: 3, width: '100%', height: '100%', p: 1 }}>
         <ListItemIcon sx={{ minWidth: 40 }}>
           <CheckCircleIcon color="success" />
